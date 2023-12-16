@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% block content %}
+<body>
+
+
+<center>
+<h1>Login Here!</h1>
+    <div class="card text-white bg-primary mb-3" style="max-width: 24rem;" >
+        <form action="" method="POST">{% csrf_token %}
+            <label for="username"><b>Name</b></label>
+            <input type="text" name="username" id="username" placeholder="enter your name" required><br>
+            <label for="password"><b>Password</b></label>
+            <input type="password" name="password" id="password" placeholder="enter your password" required><br>
+            <label ><b>submit</b></label>
+            <button type="submit" value="submit">sumbit</button>
+        </form>
+    </div>
+</center.
+{% endblock content %}
